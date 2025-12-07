@@ -1,4 +1,5 @@
 <?php
+// Base & Orignal Source: https://github.com/GGGravity-org/basic-mod-manager/blob/main/index.php
 session_start();
 
 // Admin list (usernames)
