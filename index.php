@@ -96,8 +96,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         }
 
         if($wants_change_shared){
-    if($existing_mod['owner'] !== $user_identifier && !$is_admin_action) exit('Permission denied');
-} else {
+            if($existing_mod['owner'] !== $user_identifier && !$is_admin_action) exit('Permission denied');
+        } else {
             exit('No permitted changes');
         }
     } else {
