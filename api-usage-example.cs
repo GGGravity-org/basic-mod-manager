@@ -34,7 +34,7 @@ class Program
     static async Task<List<Mod>> GetSharedMods(string search = "", int limit = 20, bool includeCode = false)
     {
         using var client = new HttpClient();
-        string url = $"https://temp.3gv.org/xor/lua/api.php?limit={limit}";
+        string url = $"https://hi.com/my-cool-game/mods/api.php?limit={limit}";
         if (!string.IsNullOrEmpty(search)) url += $"&q={Uri.EscapeDataString(search)}";
         if (includeCode) url += "&code=1";
 
